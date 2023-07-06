@@ -6,8 +6,8 @@ import customtkinter
 
 
 '''
-nombre:
-apellido:
+nombre: juan
+apellido: galante
 ---
 Ejercicio: entrada_salida_01
 ---
@@ -29,6 +29,8 @@ class App(customtkinter.CTk):
         self.btn_mostrar.grid(row=2, pady=20, columnspan=2, sticky="nsew")
 
     def btn_mostrar_on_click(self):
+        """agregue una linea"""
+        alert(title="EJ 01", message="Esto no anda, funciona")
         pass
 
 
