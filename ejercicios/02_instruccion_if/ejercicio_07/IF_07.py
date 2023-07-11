@@ -49,7 +49,15 @@ class App(customtkinter.CTk):
         mensaje_habilitado = "Habilitado para votar"
         mensaje_inhabilitado = "No puede votar"
         
-        if tipo == "NATIVO":
+        if tipo == "NATIVO" and edad >= 16:
+            alert(title = "EJ 07", message = mensaje_habilitado)
+        elif tipo == "NATURALIZADO" and edad >= 18:
+            alert(title = "EJ 07", message = mensaje_habilitado)
+        else:
+            alert(title = "EJ 07", message = mensaje_inhabilitado)
+
+        
+        """if tipo == "NATIVO":
             if edad >= 16:
                 alert(title = "EJ 07", message = mensaje_habilitado)
             else:
@@ -59,7 +67,8 @@ class App(customtkinter.CTk):
             if edad >= 18:
                 alert(title = "EJ 07", message = mensaje_habilitado)
             else: 
-                alert(title = "EJ 07", message = mensaje_inhabilitado)
+                alert(title = "EJ 07", message = mensaje_inhabilitado)"""
+        
 
 
         
