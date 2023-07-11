@@ -7,8 +7,8 @@ import random
 
 
 '''
-nombre:
-apellido:
+nombre:Juan
+apellido:Galante
 ---
 Ejercicio: instrucion_if_09
 ---
@@ -29,7 +29,19 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
-        pass
+        numero = random.randint(1 , 10)
+        alert(title = "ej 09", message = numero)
+
+        """
+        lo resolvi de esta forma pero si hay que usar un if obligatoriamente pordria ser asi tambien
+        
+        numero = random.randint(1 , 10)
+        boton = True
+
+        if boton == True:
+            alert(title = "ej 09", message = numero)
+
+        """
         
 
 if __name__ == "__main__":
