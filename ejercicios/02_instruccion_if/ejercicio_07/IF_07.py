@@ -46,15 +46,15 @@ class App(customtkinter.CTk):
 
         tipo = self.combobox_tipo.get()
         edad = int(self.txt_edad.get())
-        mensaje_habilitado = "Habilitado para votar"
-        mensaje_inhabilitado = "No puede votar"
         
         if tipo == "NATIVO" and edad >= 16:
-            alert(title = "EJ 07", message = mensaje_habilitado)
+            mensaje = "Habilitado para votar"
         elif tipo == "NATURALIZADO" and edad >= 18:
-            alert(title = "EJ 07", message = mensaje_habilitado)
+            mensaje = "Habilitado para votar"
         else:
-            alert(title = "EJ 07", message = mensaje_inhabilitado)
+            mensaje = "No puede votar"
+
+        alert("EJ 10", mensaje)    
 
         
         """if tipo == "NATIVO":
