@@ -6,6 +6,8 @@ import customtkinter
 
 
 '''
+nombre: juan
+apellido: galante
 Enunciado:
 Al presionar el botón ‘Mostrar Iteración’, mostrar mediante alert 
 10 repeticiones con números ASCENDENTE desde el 1 al 10
@@ -24,10 +26,12 @@ class App(customtkinter.CTk):
         
     
     def btn_mostrar_iteracion_on_click(self):
+
+
         contador = 1
         while contador <= 10:
             alert(title="EJ 01", message= contador)
-            contador += 1
+            contador += 1 
         
         
 

@@ -6,6 +6,8 @@ import customtkinter
 
 
 '''
+nombre: juan
+apellido: galante
 Enunciado:
 Al presionar el botón ‘Mostrar Iteración’, mostrar mediante alert 
 10 repeticiones con números DESCENDENTE desde el 1 al 10

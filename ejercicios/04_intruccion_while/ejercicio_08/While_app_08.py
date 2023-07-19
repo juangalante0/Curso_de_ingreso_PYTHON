@@ -32,7 +32,25 @@ class App(customtkinter.CTk):
 
 
     def btn_comenzar_ingreso_on_click(self):
-        pass
+        
+        numeros_positivos = 0
+        numeros_negativos = None
+
+        while True:
+            numero = prompt(title="EJ 08", prompt="Ingrese un numero")
+            if numero == None or numero == "0":
+                break
+            numero = int(numero)
+            if numero > 0:
+                numeros_positivos += numero
+            else:
+                if numeros_negativos == None:
+                    numeros_negativos = numero
+                else:
+                    numeros_negativos *= numero
+
+
+        print(numeros_negativos, numeros_positivos)
 
     
 if __name__ == "__main__":
